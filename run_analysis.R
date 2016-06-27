@@ -93,11 +93,16 @@ names(DATAF) <- gsub("bodybody","body",names(DATAF))
 names(DATAF) <- gsub("jerk","angular",names(DATAF))
 names(DATAF) <- gsub("mag","magnitude",names(DATAF))
 
-# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+class(DATAF)
+head(DATAF,3)
+write.table(DATAF,row.names=FALSE, "d:\\Documentos\\DATASCIENCE\\Getting and Cleaning Data\\Project\\TidyData.txt", sep="")
 
-#agrupar por variable y luego sacar promedio por act y sub
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 library(dplyr)
 NewData <- DATAF %>% group_by(activitylabel,subject)%>%
           summarise_each(funs(mean(.,na.rm=TRUE)),-activity)
+write.table(NewData,row.names=FALSE, "d:\\Documentos\\DATASCIENCE\\Getting and Cleaning Data\\Project\\TidyData.txt", sep="")
+
+
 
