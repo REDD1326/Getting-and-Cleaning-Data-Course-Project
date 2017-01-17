@@ -1,7 +1,7 @@
 ## Coursera Getting and Cleaning Data 
 ## Course Project
 
-# Desde RStudio
+# Desde RStudio2
 
 if(!file.exists("./Project")){dir.create("./Project")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
