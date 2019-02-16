@@ -14,7 +14,7 @@ DITEN - Università degli Studi di Genova, Genoa (I-16145), Italy.
 2 - CETpD - Technical Research Centre for Dependency Care and Autonomous Living
 Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain
 activityrecognition '@' smartlab.ws
-<www.smarlab.ws>
+www.smarlab.ws
 
 ### Study Design
 Data consist in human activity recognition using smartphones data set (description of authors):  
@@ -90,5 +90,5 @@ angle(): Angle between to vectors.
 
 ### Obtaining independent Data Subset  
 
--I create a new tidy data set with the average of each variable in data subset for each activity and each subject.
+-I create a new tidy data set with the average of each variable in data subset for each activity and each subject.  
 -I group data subset by activity name and by subject. Then I calculated the mean for each variable.
